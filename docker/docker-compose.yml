@@ -1,0 +1,14 @@
+version: "2.19"
+services:
+  web:
+    image: jmixtest/jmix-pm
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "projectmanagement"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "90229932"
